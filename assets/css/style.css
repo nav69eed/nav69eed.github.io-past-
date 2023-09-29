@@ -50,14 +50,16 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    animation: underline .75s
-    
+    animation: underline .75s forwards;
+
   }
+
   @keyframes underline {
-    0%{
-      width :  0 ;
+    0% {
+      width: 0;
     }
-    100%{
+
+    100% {
       width: 100%;
     }
   }
@@ -71,11 +73,32 @@
     animation: underline .75s
   } */
   .navbar-nav .nav-item .active {
-    background-color: #f00 !important; /* Set the background color */
-    color: #fff; /* Set the text color */
-    /* Add any other desired styles */
+    color: var(--action) !important;
+    /* animation: underline .75s */
   }
 
+  .navbar-nav .nav-item .active::after {
+    content: "";
+    height: 2px;
+    background-color: var(--action);
+    display: block;
+    width: 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: underline2 .75s forwards;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes underline2 {
+    0% {
+      width: 0;
+    }
+
+    100% {
+      width: 100%;
+    }
+  }
 
 
 
@@ -104,4 +127,70 @@
 
   .intro-right {
     background: url('../../images/arts/intro-section-illustration.png') no-repeat center center/cover;
+  }
+
+
+
+  /*         
+  **************************************************************
+
+                            SKILLS
+
+  ***********************************************************
+  */
+
+
+  .single-skill-content {}
+
+  .barWrapper {}
+
+  .progressText {
+    display: block;
+    margin: 10px 5px;
+    color: rgb(96 77 77);
+  }
+
+  .single-progress-txt{
+    display: flex;
+    align-items: center;
+    
+  }
+  .single-progress-txt h3{
+    width: 10%;
+   color: var(--secondary);
+    position: relative;
+    top: 4px;
+    font-size: 19px;
+    margin-left: 11px;
+  }
+
+  .progress {
+    width: 80%;
+    height: 7px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+  }
+
+
+
+  .progress-bar {
+    width: 0;
+    background-color: var(--secondary);
+    animation: p-bar 1.5s forwards;
+    animation-timing-function: ease-in;
+    animation-delay: 0.5s;
+    
+  }
+
+  @keyframes p-bar {
+    0% {
+      width: 0%;
+    }
+
+    50% {
+      width: var(--pw/2);
+    }
+
+    100% {
+      width: var(--pw);
+    }
   }
