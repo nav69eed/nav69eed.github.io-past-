@@ -31,10 +31,27 @@
 
 
 
-  .intro{
 
+
+  .intro>div {
+    height: 500px;
   }
 
-  .intro .col-6{
-    height: 90vh;
+  .intro {}
+
+  .mx-auto {}
+
+  .intro-left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+  }
+.name{
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+  .intro-right {
+    background: url('../../images/arts/intro-section-illustration.png') no-repeat center center/cover;
   }

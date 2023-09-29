@@ -1,0 +1,16 @@
+.c-s {
+    color: var(--secondary);
+}
+
+.btn {
+    border: 2px solid transparent;
+    background-color: var(--action);
+    color: var(--primary);
+}
+
+.btn:hover,
+.btn:active {
+    border: 2px solid var(--secondary);
+    background-color: transparent;
+    color: var(--secondary) !important;
+}
