@@ -66,9 +66,14 @@
     color: var(--secondary);
   }
 
-  #nav ul li a.active {
+  /* #nav ul li a.active {
     color: var(--action);
     animation: underline .75s
+  } */
+  .navbar-nav .nav-item .active {
+    background-color: #f00 !important; /* Set the background color */
+    color: #fff; /* Set the text color */
+    /* Add any other desired styles */
   }
 
 

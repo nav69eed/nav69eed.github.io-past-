@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <nav class="navbar navbar-expand-md shadow" id="nav">
+<body data-spy="scroll" data-target=".navbar" data-offset="0">
+    <nav class="navbar navbar-expand-md shadow sticky-md-top" id="nav">
         <div class="container">
             <a class="navbar-brand" href="">
                 <img src="images/logo.png" class="logo" alt="logo image">
@@ -33,12 +33,18 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" aria-current="page" href="#home">Home <i class="fa-duotone fa-house"></i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services <i class="fa-duotone fa-hand-holding-heart"></i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials <i class="fa-solid fa-comment-quote"></i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#faq">faq <i class="fa-duotone fa-question"></i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">portfolio <i class="fa-duotone fa-rectangle-vertical-history"></i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">contact <i class="fa-duotone fa-phone"></i></a>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="#home">Home <i
+                                class="fa-duotone fa-house"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skill">Skills <i
+                                class="fa-duotone fa-hand-holding-heart"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials <i
+                                class="fa-solid fa-comment-quote"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#profile">Profile <i
+                                class="fa-duotone fa-user"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">portfolio <i
+                                class="fa-duotone fa-rectangle-vertical-history"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">contact <i
+                                class="fa-duotone fa-phone"></i></a>
                     </li>
                 </ul>
             </div>
@@ -53,26 +59,200 @@
                 I am a Specialist <span id="skills" class="c-s"></span>
             </h3>
             <div class="buttons mt-3">
-                <button class="btn m-2">Hire Me <i class="fa-duotone fa-paper-plane"></i></button>
-                <button class="btn m-2">Download CV  <i class="fa-duotone fa-arrow-down-to-line"> </i></button>
+                <a href=""><button class="btn m-2"> Hire Me <i class="fa-duotone fa-paper-plane"></i></button></a>
+                <a href="images/cv/cv.pdf" download>
+                    <button class="btn m-2">Download CV <i class="fa-duotone fa-arrow-down-to-line"></i></button>
+                </a>
             </div>
         </div>
         <div class="col-5 intro-right mt-2"></div>
     </section>
 
 
+    <section id="skills" class="skills">
+        <div class="skill-content">
+            <div class="section-heading text-center">
+                <h2>skills</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="single-skill-content">
+                            <div class="barWrapper">
+                                <span class="progressText">adobe photoshop</span>
+                                <div class="single-progress-txt">
+                                    <div class="progress ">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                                            aria-valuemin="10" aria-valuemax="100" style="width: 90%;">
+
+                                        </div>
+                                    </div>
+                                    <h3>90%</h3>
+                                </div>
+                            </div><!-- /.barWrapper -->
+                            <div class="barWrapper">
+                                <span class="progressText">adobe illustrator</span>
+                                <div class="single-progress-txt">
+                                    <div class="progress ">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="85"
+                                            aria-valuemin="10" aria-valuemax="100" style="width: 85%;">
+
+                                        </div>
+                                    </div>
+                                    <h3>85%</h3>
+                                </div>
+                            </div><!-- /.barWrapper -->
+                            <div class="barWrapper">
+                                <span class="progressText">adobe after effects</span>
+                                <div class="single-progress-txt">
+                                    <div class="progress ">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="97"
+                                            aria-valuemin="10" aria-valuemax="100" style="width: 97%;">
+
+                                        </div>
+                                    </div>
+                                    <h3>97%</h3>
+                                </div>
+                            </div><!-- /.barWrapper -->
+                            <div class="barWrapper">
+                                <span class="progressText">sketch</span>
+                                <div class="single-progress-txt">
+                                    <div class="progress ">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                                            aria-valuemin="10" aria-valuemax="100" style="width: 90%;">
+
+                                        </div>
+                                    </div>
+                                    <h3>90%</h3>
+                                </div>
+                            </div><!-- /.barWrapper -->
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="single-skill-content">
+                            <div class="barWrapper">
+                                <span class="progressText">html 5</span>
+                                <div class="single-progress-txt">
+                                    <div class="progress ">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                                            aria-valuemin="10" aria-valuemax="100" style="width: 90%;">
+
+                                        </div>
+                                    </div>
+                                    <h3>90%</h3>
+                                </div>
+                            </div><!-- /.barWrapper -->
+                            <div class="barWrapper">
+                                <span class="progressText">css 3 animation</span>
+                                <div class="single-progress-txt">
+                                    <div class="progress ">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="85"
+                                            aria-valuemin="10" aria-valuemax="100" style="width: 85%;">
+
+                                        </div>
+                                    </div>
+                                    <h3>85%</h3>
+                                </div>
+                            </div><!-- /.barWrapper -->
+                            <div class="barWrapper">
+                                <span class="progressText">communication</span>
+                                <div class="single-progress-txt">
+                                    <div class="progress ">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="97"
+                                            aria-valuemin="10" aria-valuemax="100" style="width: 97%;">
+
+                                        </div>
+                                    </div>
+                                    <h3>97%</h3>
+                                </div>
+                            </div><!-- /.barWrapper -->
+                            <div class="barWrapper">
+                                <span class="progressText"> creativity</span>
+                                <div class="single-progress-txt">
+                                    <div class="progress ">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                                            aria-valuemin="10" aria-valuemax="100" style="width: 90%;">
+
+                                        </div>
+                                    </div>
+                                    <h3>90%</h3>
+                                </div>
+                            </div><!-- /.barWrapper -->
+                        </div>
+                    </div>
+                </div><!-- /.row -->
+            </div> <!-- /.container -->
+        </div><!-- /.skill-content-->
+
+    </section>
+
+
+    <section id="skill" class="skill container-fluid">
+        <div class=" skill-title">
+            <h2>My Skills</h2>
+        </div>
+        <div class="skill-list ">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>Django</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials container-fluid row mx-auto">
+        <div class="col-12 testimonials-title mt-5">
+            <h2>Testimonials</h2>
+        </div>
+        <div class="col-12 testimonials-list mt-5">
+            <div class="testimonial">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+                <h3>John Doe</h3>
+                <h4>Web Developer</h4>
+            </div>
+            <div class="testimonial">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+                <h3>Jane Smith</h3>
+                <h4>Web Designer</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="profile" class="profile container-fluid row mx-auto">
+        <div class="col-12 profile-title mt-5">
+            <h2>My Profile</h2>
+        </div>
+        <div class="col-12 profile-list mt-5">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec od
+            </p>
+        </div>
+    </section>
 
 
 
 
     <script>
         var typed = new Typed('#skills', {
-            strings: ['Web Developer', 'Wordpress Developer','C++ Programmer','C Programmer','Laravel Programmer'],
+            strings: ['Web Developer', 'Wordpress Developer', 'C++ Programmer', 'C Programmer', 'Laravel Programmer'],
             typeSpeed: 50,
             smartBackspace: true,
             loop: true,
             loopCount: Infinity,
         });
+
+
+        // Initialize scrollspy
+        $('body').scrollspy({
+            target: '.navbar',
+            offset: 0
+        });
+
+
     </script>
 </body>
 
