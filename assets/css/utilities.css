@@ -1,16 +1,23 @@
 .c-s {
     color: var(--secondary);
+    /* Set the color to the secondary color */
 }
 
 .btn {
     border: 2px solid transparent;
+    /* Set the border to transparent */
     background-color: var(--action);
+    /* Set the background color to the action color */
     color: var(--primary);
+    /* Set the color to the primary color */
 }
 
 .btn:hover,
 .btn:active {
     border: 2px solid var(--secondary);
+    /* Set the border to the secondary color */
     background-color: transparent;
+    /* Set the background color to transparent */
     color: var(--secondary) !important;
+    /* Set the color to the secondary color with important */
 }
