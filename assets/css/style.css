@@ -150,14 +150,15 @@
     color: rgb(96 77 77);
   }
 
-  .single-progress-txt{
+  .single-progress-txt {
     display: flex;
     align-items: center;
-    
+
   }
-  .single-progress-txt h3{
+
+  .single-progress-txt h3 {
     width: 10%;
-   color: var(--secondary);
+    color: var(--secondary);
     position: relative;
     top: 4px;
     font-size: 19px;
@@ -167,7 +168,7 @@
   .progress {
     width: 80%;
     height: 7px;
-    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
   }
 
 
@@ -178,7 +179,7 @@
     animation: p-bar 1.5s forwards;
     animation-timing-function: ease-in;
     animation-delay: 0.5s;
-    
+
   }
 
   @keyframes p-bar {
@@ -193,4 +194,87 @@
     100% {
       width: var(--pw);
     }
+  }
+
+
+
+  /*
+  *                       PROFILES
+  */
+
+  .profile-item i {
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+
+  .profile-item {
+    height: 200px;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile-item:hover {}
+
+
+
+
+
+
+
+  .profile-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1px;
+    background-color: gray;
+  }
+
+  .card {
+    transition: all 0.4s;
+    overflow: hidden;
+    border-radius: 0 !important;
+    border: none;
+  }
+
+
+
+  .first-content {
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+
+  }
+
+  .card:hover .first-content {
+    height: 0px;
+    opacity: 0;
+  }
+
+  .second-content {
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    color: white !important;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg,var(--secondary), var(--action));
+    transition: all 0.4s;
+
+    transform: rotate(90deg) scale(-1);
+  }
+
+  .card:hover .second-content {
+    opacity: 1;
+    height: 100%;
+    transform: rotate(0deg);
   }
