@@ -304,18 +304,22 @@
 
 
   .project-container {
-    border: 1px solid rgb(169, 161, 161);
     padding: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 1px;
-    background-color: rgb(169, 161, 161);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 3px;
+
+  }
+
+  .project-item img {
+    height: 100%;
+    width: 100%;
   }
 
   .project-item {
     height: 200px;
-    background-color: white;
+    overflow: hidden;
   }
 
   .myCard {
@@ -324,13 +328,6 @@
     background-color: transparent;
     perspective: 1000px;
 
-  }
-
-  .title {
-    font-size: 1.5em;
-    font-weight: 900;
-    text-align: center;
-    margin: 0;
   }
 
   .innerCard {
@@ -352,9 +349,31 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    color: white;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
+
   .backSide {
     transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly
+  }
+
+  .backSide button:hover {
+    color: var(--action) !important;
+    border-color: var(--action);
+  }
+
+  .backSide::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(198, 54, 198, .75);
+    z-index: -1;
   }
