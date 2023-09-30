@@ -21,3 +21,8 @@
     color: var(--secondary) !important;
     /* Set the color to the secondary color with important */
 }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

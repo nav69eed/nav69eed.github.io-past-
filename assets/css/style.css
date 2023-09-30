@@ -77,6 +77,11 @@
     /* animation: underline .75s */
   }
 
+  #nav {
+    background-color: rgba(255, 255, 255, 0.75) !important;
+    z-index: 1000;
+  }
+
   .navbar-nav .nav-item .active::after {
     content: "";
     height: 2px;
@@ -216,6 +221,13 @@
     align-items: center;
   }
 
+  .profile-item a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .profile-item:hover {}
 
 
@@ -229,7 +241,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 1px;
-    background-color: gray;
+    background-color: rgb(158, 153, 153);
   }
 
   .card {
@@ -258,6 +270,9 @@
     opacity: 0;
   }
 
+
+
+  /* This is the second content of the card. It is hidden by default, and will be shown when the card is hovered over. */
   .second-content {
     height: 0%;
     width: 100%;
@@ -267,7 +282,8 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(180deg,var(--secondary), var(--action));
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
     transition: all 0.4s;
 
     transform: rotate(90deg) scale(-1);
