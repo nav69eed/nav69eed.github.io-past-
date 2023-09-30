@@ -294,3 +294,67 @@
     height: 100%;
     transform: rotate(0deg);
   }
+
+
+
+
+  /*
+                    PORTFOLIO SECTION
+                    */
+
+
+  .project-container {
+    border: 1px solid rgb(169, 161, 161);
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1px;
+    background-color: rgb(169, 161, 161);
+  }
+
+  .project-item {
+    height: 200px;
+    background-color: white;
+  }
+
+  .myCard {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    perspective: 1000px;
+
+  }
+
+  .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+
+  .innerCard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+
+  .myCard:hover .innerCard {
+    transform: rotateY(180deg);
+  }
+
+  .frontSide,
+  .backSide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .backSide {
+    transform: rotateY(180deg);
+  }
