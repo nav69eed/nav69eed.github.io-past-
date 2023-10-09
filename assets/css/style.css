@@ -362,7 +362,6 @@ body {
   width: 100vw;
   display: grid;
   place-items: center;
-  
 }
 .custom-loader {
   width: 75px;
@@ -455,4 +454,47 @@ body {
   100% {
     transform: scaleY(-1) rotate(-135deg);
   }
+}
+
+/*
+==============****
+EDUCATION
+*/
+.education {
+}
+.education-timeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 500px;
+  padding-left: 0;
+}
+.timeline-item::before {
+  content: "";
+  height: 80%;
+  width: 3px;
+  border-radius: 50px;
+  background-color: var(--secondary);
+  position: absolute;
+  top: 21px;
+  left: 0;
+}
+.timeline-item h4 {
+
+}
+.timeline-item {
+  /* padding-left: 20px; */
+  display: flex;
+  align-items: baseline;
+}
+.timeline-content {
+  text-align: start;
+}
+.timeline-content-line {
+  border: 1.5px solid var(--secondary);
+  width: 40px;
+  display: inline-block;
+  /* margin-left: -32px; */
+  vertical-align: middle;
 }

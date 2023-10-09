@@ -2,7 +2,9 @@
     color: var(--secondary);
     /* Set the color to the secondary color */
 }
-
+.c-a{
+    color: var(--action);
+}
 .btn {
     border: 2px solid transparent;
     /* Set the border to transparent */
