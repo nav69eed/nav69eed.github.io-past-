@@ -7,6 +7,7 @@
      -->
     <title>Naveed | Portfolio</title>
     <!-- Comment: Include the necessary CSS and JS files -->
+    <link rel="stylesheet" href="assets/css/form.css" />
     <script src="assets/js/script.js"></script>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <script src="bootstrap/js/bootstrap.min.js"></script>
@@ -58,14 +59,10 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#skill"
-                >Skills <i class="fa-duotone fa-hand-holding-heart"></i
+                >Skills <i class="fa-duotone fa-gear-code"></i></i
               ></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#testimonials"
-                >Testimonials <i class="fa-solid fa-comment-quote"></i
-              ></a>
-            </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#profile"
                 >Profile <i class="fa-duotone fa-user"></i
@@ -73,13 +70,18 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#portfolio"
-                >portfolio
+                >Portfolio
                 <i class="fa-duotone fa-rectangle-vertical-history"></i
               ></a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#education"
+                >Education <i class="fa-duotone fa-user-graduate"></i
+              ></a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#contact"
-                >contact <i class="fa-duotone fa-phone"></i
+                >Contact <i class="fa-duotone fa-phone"></i
               ></a>
             </li>
           </ul>
@@ -257,31 +259,6 @@
       </div>
       <!-- /.container -->
     </section>
-
-    <section id="testimonials" class="testimonials container-fluid row mx-auto">
-      <div class="col-12 testimonials-title mt-5">
-        <h2>Testimonials</h2>
-      </div>
-      <div class="col-12 testimonials-list mt-5">
-        <div class="testimonial">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-            odio. Praesent libero.
-          </p>
-          <h3>John Doe</h3>
-          <h4>Web Developer</h4>
-        </div>
-        <div class="testimonial">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-            odio. Praesent libero.
-          </p>
-          <h3>Jane Smith</h3>
-          <h4>Web Designer</h4>
-        </div>
-      </div>
-    </section>
-
     <section id="profile" class="profile container-fluid">
       <div class="profile-title mt-5 mb-3 text-center c-s">
         <h2>My Profiles</h2>
@@ -410,7 +387,7 @@
 
     <section class="portfolio mt-5 mb-3" id="portfolio">
       <!-- Portfolio Section Heading-->
-      <h4 class="c-s text-center">My Work</h4>
+      <h4 class="c-s text-center mb-5">My Work</h4>
       <div class="container project-container">
         <div class="project-item">
           <div class="myCard">
@@ -511,9 +488,7 @@
                   href="https://github.com/nav69eed/CPP-CODE/tree/main/bank"
                   target="_blank"
                 >
-                  <button class="btn">View Project 
-
-                  </button></a
+                  <button class="btn">View Project</button></a
                 >
                 <p>Category:- C++(OOP)</p>
               </div>
@@ -595,17 +570,20 @@
             </div>
           </div>
         </div>
-        
+
         <div class="timeline-item">
           <span class="timeline-content-line"></span>
           <div class="">
             <div class="timeline-content">
-              <h4>Pakistan Institute of Engineering<br>and Applied Sciences Islamabad</h4>
+              <h4>
+                Pakistan Institute of Engineering<br />and Applied Sciences
+                Islamabad
+              </h4>
               <p class="c-a">BS Computer and Informaton Science</p>
               <p>2022 - 2026</p>
             </div>
           </div>
-        </div> 
+        </div>
         <div class="timeline-item">
           <span class="timeline-content-line"></span>
           <div class="">
@@ -615,12 +593,236 @@
               <p>2023 - 2023</p>
             </div>
           </div>
-        </div> 
+        </div>
         <!-- Add more timeline items for each education experience -->
       </div>
     </section>
 
-    
+    <!-- <section class="" id="Contact"></section> -->
+
+    <section class="ftco-section" id="contact">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center mb-5">
+            <h2 class="heading-section c-s">Lets Connect with me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="">
+              <div class="row no-gutters">
+                <div
+                  class="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch"
+                >
+                  <div class="contact-wrap w-100 p-md-5 p-4">
+                    <h3 class="mb-4 c-s">Get in touch</h3>
+                    <form id="contactForm" class="contactForm">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="name">Full Name</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="name"
+                              id="name"
+                              placeholder="Name"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="email"
+                              >Email Address</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control"
+                              name="email"
+                              id="email"
+                              placeholder="Email"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label class="label" for="subject">Subject</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="subject"
+                              id="subject"
+                              placeholder="Subject"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label class="label" for="#">Message</label>
+                            <textarea
+                              name="message"
+                              class="form-control"
+                              id="message"
+                              cols="30"
+                              rows="4"
+                              placeholder="Message"
+                            ></textarea>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <button class="btn mt-4">Submit</button>
+                            <div class="submitting"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-5 d-flex align-items-stretch">
+                  <div class="info-wrap w-100 p-md-5 p-4">
+                    <h3>Let's get in touch</h3>
+                    <p class="mb-4">
+                      We're open for any suggestion or just to have a chat
+                    </p>
+                    <div class="dbox w-100 d-flex align-items-start">
+                      <div
+                        class="icon d-flex align-items-center justify-content-center"
+                      >
+                        <span class="fa-duotone fa-location-dot"> </span>
+                      </div>
+                      <div class="text pl-3">
+                        <p>
+                          <span>Address:</span> Nilore, Islamabad Capital
+                          Teritory Pakistan
+                        </p>
+                      </div>
+                    </div>
+                    <div class="dbox w-100 d-flex align-items-center">
+                      <div
+                        class="icon d-flex align-items-center justify-content-center"
+                      >
+                        <span class="fa fa-duotone fa-phone"></span>
+                      </div>
+                      <div class="text pl-3">
+                        <p>
+                          <span>Phone:</span>
+                          <a href="tel://+923024512709">+92 302 4512709</a>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="dbox w-100 d-flex align-items-center">
+                      <div
+                        class="icon d-flex align-items-center justify-content-center"
+                      >
+                        <span class="fa fa-duotone fa-paper-plane"></span>
+                      </div>
+                      <div class="text pl-3">
+                        <p>
+                          <span>Email:</span>
+                          <a>
+                            <span>
+                              naveedakhtarnaveed<br />69@gmail.com
+                            </span></a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <div class="dbox w-100 d-flex align-items-center">
+                      <div
+                        class="icon d-flex align-items-center justify-content-center"
+                      >
+                        <span class="fa fa-duotone fa-globe"></span>
+                      </div>
+                      <div class="text pl-3">
+                        <p>
+                          <span>Website</span>
+                          <a href="#">nav69eed.github.io</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="">
+      <div class="container mb-5">
+        <footer class="pt-5">
+          <div class="d-flex justify-content-evenly flex-column flex-sm-row">
+            <div class="col-6 col-md-2 mb-3 justify-content-center">
+              <h5 class="c-s">Links</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="/index.html" class="nav-link p-0 text-body-secondary">Home</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#skill" class="nav-link p-0 text-body-secondary"
+                    >Skills</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary"
+                    >Pricing</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5 class="c-s">Lets Connect</h5>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden"
+                    >Message</label
+                  >
+                  <input
+                    id="newsletter1"
+                    type="text"
+                    class="form-control  border-0"
+                    placeholder="Message Here"
+                  />
+                  <button class="btn btn-primary" type="button">Contact</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div
+            class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+          >
+            <p>© Copyright by Naveed Akhtar</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3">
+                <a class="link-body-emphasis" href="#"
+                  ><i class="fa-brands fa-github fa-2xl"></i
+                ></a>
+              </li>
+              <li class="ms-3">
+                <a class="link-body-emphasis" href="#"
+                  ><i class="fa-brands fa-facebook fa-2xl"></i
+                ></a>
+              </li>
+              <li class="ms-3">
+                <a class="" href="#">
+                  <i class="fa-brands fa-whatsapp fa-2xl"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </section>
+
     <script>
       var typed = new Typed("#skills", {
         strings: [

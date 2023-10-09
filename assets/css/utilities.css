@@ -13,7 +13,10 @@
     color: var(--primary);
     /* Set the color to the primary color */
 }
-
+.info-wrap {
+    background-color: var(--secondary);
+    color: rgba(255, 255, 255, 0.8);
+  }
 .btn:hover,
 .btn:active {
     border: 2px solid var(--secondary);

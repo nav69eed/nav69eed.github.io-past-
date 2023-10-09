@@ -472,7 +472,7 @@ EDUCATION
 }
 .timeline-item::before {
   content: "";
-  height: 80%;
+  height: 85%;
   width: 3px;
   border-radius: 50px;
   background-color: var(--secondary);
@@ -486,10 +486,24 @@ EDUCATION
 }
 .timeline-content {
   text-align: start;
+  margin-left: 15px;
 }
 .timeline-content-line {
   border: 1.5px solid var(--secondary);
   width: 40px;
   display: inline-block;
   vertical-align: middle;
+}
+
+/*
+
+            FORMS
+
+            */
+#newsletter1:active,
+#newsletter1:focus {
+  border-bottom-color:rgb(0, 130, 0) !important ;
+}
+#newsletter1 {
+  border-bottom: 1px solid rgb(169, 167, 167) !important;
 }
