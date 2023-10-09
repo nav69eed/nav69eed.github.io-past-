@@ -1,490 +1,589 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Comment: Update the title of the page -->
     <title>Naveed | Portfolio</title>
     <!-- Comment: Include the necessary CSS and JS files -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- <link rel="stylesheet" href="assets/css/fontawesome.css"> -->
-    <link rel="stylesheet" href="assets/css/utilities.css">
+    <link rel="stylesheet" href="assets/css/utilities.css" />
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+    />
 
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
 
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
+    <div class="loader-container">
+      <div class="custom-loader" id="loader"></div>
+    </div>
 
-
-
-</head>
-
-<body data-bs-spy="scroll" data-bs-target=".navbar">
     <nav class="navbar navbar-expand-md shadow sticky-md-top" id="nav">
-        <div class="container">
-            <a class="navbar-brand" href="">
-                <img src="images/logo.png" class="logo" alt="logo image">
-                <span class="c-s logo-text">aveed</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" aria-current="page" href="#home">Home <i
-                                class="fa-duotone fa-house"></i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skill">Skills <i
-                                class="fa-duotone fa-hand-holding-heart"></i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials <i
-                                class="fa-solid fa-comment-quote"></i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#profile">Profile <i
-                                class="fa-duotone fa-user"></i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">portfolio <i
-                                class="fa-duotone fa-rectangle-vertical-history"></i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">contact <i
-                                class="fa-duotone fa-phone"></i></a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="">
+          <img src="images/logo.png" class="logo" alt="logo image" />
+          <span class="c-s logo-text">aveed</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home"
+                >Home <i class="fa-duotone fa-house"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skill"
+                >Skills <i class="fa-duotone fa-hand-holding-heart"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials"
+                >Testimonials <i class="fa-solid fa-comment-quote"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#profile"
+                >Profile <i class="fa-duotone fa-user"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio"
+                >portfolio
+                <i class="fa-duotone fa-rectangle-vertical-history"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"
+                >contact <i class="fa-duotone fa-phone"></i
+              ></a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <section id="home" class="intro container-fluid row mx-auto">
-        <div class="col-md-7 intro-left mt-5 ps-5">
-            <h2>
-                Hi, I am <span class="c-s name">Naveed Akhtar</span>
-            </h2>
-            <h3>
-                I am a Specialist <span id="skills" class="c-s"></span>
-            </h3>
-            <div class="buttons mt-3">
-                <a href=""><button class="btn m-2"> Hire Me <i class="fa-duotone fa-paper-plane"></i></button></a>
-                <a href="images/cv/cv.pdf" download>
-                    <button class="btn m-2">Download CV <i
-                            class="fa-duotone fa-arrow-down-to-line fa-fade"></i></button>
-                </a>
-            </div>
+      <div class="col-md-7 intro-left mt-5 ps-5">
+        <h2>Hi, I am <span class="c-s name">Naveed Akhtar</span></h2>
+        <h3>I am a Specialist <span id="skills" class="c-s"></span></h3>
+        <div class="buttons mt-3">
+          <a href=""
+            ><button class="btn m-2">
+              Hire Me <i class="fa-duotone fa-paper-plane"></i></button
+          ></a>
+          <a href="images/cv/cv.pdf" download>
+            <button class="btn m-2">
+              Download CV
+              <i class="fa-duotone fa-arrow-down-to-line fa-fade"></i>
+            </button>
+          </a>
         </div>
-        <div class="col-md-5 intro-right mt-2"></div>
+      </div>
+      <div class="col-md-5 intro-right mt-2"></div>
     </section>
-
 
     <section id="skill" class="skills">
+      <div class="section-heading text-center mt-2">
+        <h2>Skills</h2>
+      </div>
 
-        <div class="section-heading text-center mt-2">
-            <h2>Skills</h2>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="single-skill-content">
+              <div class="barWrapper">
+                <span class="progressText">HTML 5</span>
+                <div class="single-progress-txt">
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="--pw: 90%"
+                    ></div>
+                  </div>
+                  <h3>90%</h3>
+                </div>
+              </div>
+              <!-- /.barWrapper -->
+              <div class="barWrapper">
+                <span class="progressText">Javascript</span>
+                <div class="single-progress-txt">
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="85"
+                      aria-valuemin="10"
+                      aria-valuemax="100"
+                      style="--pw: 55%"
+                    ></div>
+                  </div>
+                  <h3>55%</h3>
+                </div>
+              </div>
+              <!-- /.barWrapper -->
+              <div class="barWrapper">
+                <span class="progressText">C Language</span>
+                <div class="single-progress-txt">
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="97"
+                      aria-valuemin="10"
+                      aria-valuemax="100"
+                      style="--pw: 85%"
+                    ></div>
+                  </div>
+                  <h3>85%</h3>
+                </div>
+              </div>
+              <!-- /.barWrapper -->
+              <div class="barWrapper">
+                <span class="progressText">Laravel (PHP)</span>
+                <div class="single-progress-txt">
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="90"
+                      aria-valuemin="10"
+                      aria-valuemax="100"
+                      style="--pw: 70%"
+                    ></div>
+                  </div>
+                  <h3>70%</h3>
+                </div>
+              </div>
+              <!-- /.barWrapper -->
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="barWrapper">
+              <span class="progressText">CSS</span>
+              <div class="single-progress-txt">
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="90"
+                    aria-valuemin="10"
+                    aria-valuemax="100"
+                    style="--pw: 85%"
+                  ></div>
+                </div>
+                <h3>85%</h3>
+              </div>
+            </div>
+            <!-- /.barWrapper -->
+            <div class="barWrapper">
+              <span class="progressText">Wordpress</span>
+              <div class="single-progress-txt">
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="85"
+                    aria-valuemin="10"
+                    aria-valuemax="100"
+                    style="--pw: 75%"
+                  ></div>
+                </div>
+                <h3>75%</h3>
+              </div>
+            </div>
+            <!-- /.barWrapper -->
+            <div class="barWrapper">
+              <span class="progressText">C++</span>
+              <div class="single-progress-txt">
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="97"
+                    aria-valuemin="10"
+                    aria-valuemax="100"
+                    style="--pw: 75%"
+                  ></div>
+                </div>
+                <h3>75%</h3>
+              </div>
+            </div>
+            <!-- /.barWrapper -->
+            <div class="barWrapper">
+              <span class="progressText">Git</span>
+              <div class="single-progress-txt">
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="90"
+                    aria-valuemin="10"
+                    aria-valuemax="100"
+                    style="--pw: 95%"
+                  ></div>
+                </div>
+                <h3>95%</h3>
+              </div>
+            </div>
+            <!-- /.barWrapper -->
+          </div>
         </div>
-
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="single-skill-content">
-                        <div class="barWrapper">
-                            <span class="progressText">HTML 5</span>
-                            <div class="single-progress-txt">
-                                <div class="progress ">
-                                    <div class="progress-bar" role="progressbar" style="--pw:90%">
-                                    </div>
-                                </div>
-                                <h3>90%</h3>
-
-                            </div>
-                        </div><!-- /.barWrapper -->
-                        <div class="barWrapper">
-                            <span class="progressText">Javascript</span>
-                            <div class="single-progress-txt">
-                                <div class="progress ">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10"
-                                        aria-valuemax="100" style="--pw:55%">
-
-                                    </div>
-                                </div>
-                                <h3>55%</h3>
-                            </div>
-                        </div><!-- /.barWrapper -->
-                        <div class="barWrapper">
-                            <span class="progressText">C Language</span>
-                            <div class="single-progress-txt">
-                                <div class="progress ">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="10"
-                                        aria-valuemax="100" style="--pw:85%">
-                                    </div>
-                                </div>
-                                <h3>85%</h3>
-                            </div>
-                        </div><!-- /.barWrapper -->
-                        <div class="barWrapper">
-                            <span class="progressText">Laravel (PHP)</span>
-                            <div class="single-progress-txt">
-                                <div class="progress ">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10"
-                                        aria-valuemax="100" style="--pw:70%">
-
-                                    </div>
-                                </div>
-                                <h3>70%</h3>
-                            </div>
-                        </div><!-- /.barWrapper -->
-                    </div>
-                </div>
-                <div class="col-md-6">
-
-                    <div class="barWrapper">
-                        <span class="progressText">CSS</span>
-                        <div class="single-progress-txt">
-                            <div class="progress ">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10"
-                                    aria-valuemax="100" style="--pw:85%">
-
-                                </div>
-                            </div>
-                            <h3>85%</h3>
-                        </div>
-                    </div><!-- /.barWrapper -->
-                    <div class="barWrapper">
-                        <span class="progressText">Wordpress</span>
-                        <div class="single-progress-txt">
-                            <div class="progress ">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10"
-                                    aria-valuemax="100" style="--pw:75%">
-
-                                </div>
-                            </div>
-                            <h3>75%</h3>
-                        </div>
-                    </div><!-- /.barWrapper -->
-                    <div class="barWrapper">
-                        <span class="progressText">C++</span>
-                        <div class="single-progress-txt">
-                            <div class="progress ">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="10"
-                                    aria-valuemax="100" style="--pw:75%">
-
-                                </div>
-                            </div>
-                            <h3>75%</h3>
-                        </div>
-                    </div><!-- /.barWrapper -->
-                    <div class="barWrapper">
-                        <span class="progressText">Git</span>
-                        <div class="single-progress-txt">
-                            <div class="progress ">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10"
-                                    aria-valuemax="100" style="--pw:95%">
-
-                                </div>
-                            </div>
-                            <h3>95%</h3>
-                        </div>
-                    </div><!-- /.barWrapper -->
-
-                </div>
-            </div><!-- /.row -->
-        </div> <!-- /.container -->
-
-
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
     </section>
 
-
-
-
-
-
-
-
-
-
     <section id="testimonials" class="testimonials container-fluid row mx-auto">
-        <div class="col-12 testimonials-title mt-5">
-            <h2>Testimonials</h2>
+      <div class="col-12 testimonials-title mt-5">
+        <h2>Testimonials</h2>
+      </div>
+      <div class="col-12 testimonials-list mt-5">
+        <div class="testimonial">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+            odio. Praesent libero.
+          </p>
+          <h3>John Doe</h3>
+          <h4>Web Developer</h4>
         </div>
-        <div class="col-12 testimonials-list mt-5">
-            <div class="testimonial">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
-                <h3>John Doe</h3>
-                <h4>Web Developer</h4>
-            </div>
-            <div class="testimonial">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
-                <h3>Jane Smith</h3>
-                <h4>Web Designer</h4>
-            </div>
+        <div class="testimonial">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+            odio. Praesent libero.
+          </p>
+          <h3>Jane Smith</h3>
+          <h4>Web Designer</h4>
         </div>
+      </div>
     </section>
 
     <section id="profile" class="profile container-fluid">
-        <div class="profile-title mt-5 mb-3 text-center c-s">
-            <h2>My Profiles</h2>
-        </div>
-        <div class="profile-list mt-5 container">
-            <div class="profile-container">
-                <div class="profile-item card">
-
-                    <div class="first-content ">
-                        <a href="https://www.linkedin.com/in/naveed-akhtar-b386b2291/" target="_blank">
-                            <i class="fa-brands fa-linkedin" style="color: rgb(54, 54, 189);"></i>
-                            <h5>
-                                LinkedIn
-                            </h5>
-                        </a>
-                    </div>
-                    <div class="second-content">
-                        <a href="https://www.linkedin.com/in/naveed-akhtar-b386b2291/" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i>
-                            <h5>
-                                LinkedIn
-                            </h5>
-                        </a>
-                    </div>
-
-                </div>
-                <div class="profile-item card">
-                    <div class="first-content">
-                        <a href="https://github.com/nav69eed" target="_blank">
-                            <i class="fa-brands fa-github" style="color: black;"></i>
-                            <h5>
-                                Github
-                            </h5>
-                        </a>
-                    </div>
-                    <div class="second-content">
-                        <a href="https://github.com/nav69eed" target="_blank">
-                            <i class="fa-brands fa-github"></i>
-                            <h5>
-                                Github
-                            </h5>
-                        </a>
-                    </div>
-
-                </div>
-                <div class="profile-item card">
-                    <div class="first-content">
-                        <a href="https://www.facebook.com/profile.php?id=100083276452151" target="_blank">
-                            <i class="fa-brands fa-square-facebook" style="color: rgb(54, 54, 189);"></i>
-                            <h5>
-                                Facebook
-                            </h5>
-                        </a>
-                    </div>
-                    <div class="second-content">
-                        <a href="https://www.facebook.com/profile.php?id=100083276452151" target="_blank">
-                            <i class="fa-brands fa-square-facebook"></i>
-                            <h5>
-                                Facebook
-                            </h5>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="profile-item card">
-                    <div class="first-content">
-                        <a href="https://www.instagram.com/naveedakhtar.56/" target="_blank">
-                            <i class="fa-brands fa-instagram" style="color: rgb(236, 33, 57);"></i>
-                            <h5>
-                                Instagram
-                            </h5>
-                        </a>
-                    </div>
-                    <div class="second-content">
-                        <a href="https://www.instagram.com/naveedakhtar.56/" target="_blank">
-                            <i class="fa-brands fa-instagram"></i>
-                            <h5>
-                                Instagram
-                            </h5>
-                        </a>
-                    </div>
-
-                </div>
-                <div class="profile-item card">
-                    <div class="first-content">
-                        <a href="https://wa.me/+923076594752" target="_blank">
-                            <i class="fa-brands fa-whatsapp" style="color: rgb(16, 239, 0);"></i>
-                            <h5>
-                                Whatsapp
-                            </h5>
-                        </a>
-                    </div>
-                    <div class="second-content">
-                        <a href="https://wa.me/+923076594752" target="_blank">
-                            <i class="fa-brands fa-whatsapp"></i>
-                            <h5>
-                                Whatsapp
-                            </h5>
-                        </a>
-                    </div>
-
-                </div>
-                <div class="profile-item card">
-
-                    <div class="first-content">
-                        <i class="fa-brands fa-twitter" style="color: rgb(111, 197, 231)"></i>
-                        <h5>
-                            Twitter
-                        </h5>
-                    </div>
-                    <div class="second-content">
-                        <a href="">
-                            <i class="fa-brands fa-twitter"></i>
-                            <h5>
-                                Twitter
-                            </h5>
-                        </a>
-                    </div>
-                </div>
+      <div class="profile-title mt-5 mb-3 text-center c-s">
+        <h2>My Profiles</h2>
+      </div>
+      <div class="profile-list mt-5 container">
+        <div class="profile-container">
+          <div class="profile-item card">
+            <div class="first-content">
+              <a
+                href="https://www.linkedin.com/in/naveed-akhtar-b386b2291/"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-linkedin"
+                  style="color: rgb(54, 54, 189)"
+                ></i>
+                <h5>LinkedIn</h5>
+              </a>
             </div>
+            <div class="second-content">
+              <a
+                href="https://www.linkedin.com/in/naveed-akhtar-b386b2291/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+                <h5>LinkedIn</h5>
+              </a>
+            </div>
+          </div>
+          <div class="profile-item card">
+            <div class="first-content">
+              <a href="https://github.com/nav69eed" target="_blank">
+                <i class="fa-brands fa-github" style="color: black"></i>
+                <h5>Github</h5>
+              </a>
+            </div>
+            <div class="second-content">
+              <a href="https://github.com/nav69eed" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                <h5>Github</h5>
+              </a>
+            </div>
+          </div>
+          <div class="profile-item card">
+            <div class="first-content">
+              <a
+                href="https://www.facebook.com/profile.php?id=100083276452151"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-square-facebook"
+                  style="color: rgb(54, 54, 189)"
+                ></i>
+                <h5>Facebook</h5>
+              </a>
+            </div>
+            <div class="second-content">
+              <a
+                href="https://www.facebook.com/profile.php?id=100083276452151"
+                target="_blank"
+              >
+                <i class="fa-brands fa-square-facebook"></i>
+                <h5>Facebook</h5>
+              </a>
+            </div>
+          </div>
+
+          <div class="profile-item card">
+            <div class="first-content">
+              <a
+                href="https://www.instagram.com/naveedakhtar.56/"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-instagram"
+                  style="color: rgb(236, 33, 57)"
+                ></i>
+                <h5>Instagram</h5>
+              </a>
+            </div>
+            <div class="second-content">
+              <a
+                href="https://www.instagram.com/naveedakhtar.56/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-instagram"></i>
+                <h5>Instagram</h5>
+              </a>
+            </div>
+          </div>
+          <div class="profile-item card">
+            <div class="first-content">
+              <a href="https://wa.me/+923076594752" target="_blank">
+                <i
+                  class="fa-brands fa-whatsapp"
+                  style="color: rgb(16, 239, 0)"
+                ></i>
+                <h5>Whatsapp</h5>
+              </a>
+            </div>
+            <div class="second-content">
+              <a href="https://wa.me/+923076594752" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+                <h5>Whatsapp</h5>
+              </a>
+            </div>
+          </div>
+          <div class="profile-item card">
+            <div class="first-content">
+              <i
+                class="fa-brands fa-twitter"
+                style="color: rgb(111, 197, 231)"
+              ></i>
+              <h5>Twitter</h5>
+            </div>
+            <div class="second-content">
+              <a href="">
+                <i class="fa-brands fa-twitter"></i>
+                <h5>Twitter</h5>
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="portfolio mt-5 mb-3" id="portfolio">
-        <!-- Portfolio Section Heading-->
-        <h4 class="c-s text-center">
-            My Work
-        </h4>
-        <div class="container project-container">
-            <div class="project-item ">
-                <div class="myCard">
-                    <div class="innerCard">
-                        <div class="frontSide">
-                            <img src="https://images.pexels.com/photos/1181449/pexels-photo-1181449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                alt="Website" class="img-fluid">
-                        </div>
-                        <div class="backSide"
-                            style="background: url('https://images.pexels.com/photos/1181449/pexels-photo-1181449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center/cover;">
-                            <p class="h4 title">SEO Website</p>
-                            <button class="btn">View Project</button>
-                            <p>
-                                Category :- HTML,CSS,Js
-                            </p>
-                        </div>
-                    </div>
-                </div>
+      <!-- Portfolio Section Heading-->
+      <h4 class="c-s text-center">My Work</h4>
+      <div class="container project-container">
+        <div class="project-item">
+          <div class="myCard">
+            <div class="innerCard">
+              <div class="frontSide">
+                <img
+                  src="https://images.pexels.com/photos/1181449/pexels-photo-1181449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt="Website"
+                  class="img-fluid"
+                />
+              </div>
+              <div
+                class="backSide"
+                style="
+                  background: url('https://images.pexels.com/photos/1181449/pexels-photo-1181449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')
+                    no-repeat center center/cover;
+                "
+              >
+                <p class="h4 title">SEO Website</p>
+                <button class="btn">View Project</button>
+                <p>Category :- HTML,CSS,Js</p>
+              </div>
             </div>
-            <div class="project-item ">
-                <div class="myCard">
-                    <div class="innerCard">
-                        <div class="frontSide">
-                            <img src="https://images.pexels.com/photos/5940841/pexels-photo-5940841.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                alt="Website" class="img-fluid">
-                        </div>
-                        <div class="backSide"
-                            style="background: url('https://images.pexels.com/photos/5940841/pexels-photo-5940841.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center/cover;">
-                            <p class="h4 title">Student Management System</p>
-                            <a href="https://github.com/nav69eed/CPP-CODE/tree/main/CPP%20PROGRAMMING" target="_blank">
-                                <button class="btn">View Project</button>
-                            </a>
-                            <p>
-                                Category:- C++ (OOP)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project-item ">
-                <div class="myCard">
-                    <div class="innerCard">
-                        <div class="frontSide">
-                            <img src="https://images.pexels.com/photos/6550162/pexels-photo-6550162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                alt="Website" class="img-fluid">
-                        </div>
-                        <div class="backSide"
-                            style="background: url('https://images.pexels.com/photos/6550162/pexels-photo-6550162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center/cover;">
-                            <p class="h4 title">
-                                Library Management System
-                            </p>
-                            <button class="btn">View Project</button>
-                            <p>
-                                Category: - C++ (OOP)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project-item ">
-                <div class="myCard">
-                    <div class="innerCard">
-                        <div class="frontSide">
-                            <img src="https://images.pexels.com/photos/1398431/pexels-photo-1398431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                alt="Website" class="img-fluid">
-                        </div>
-                        <div class="backSide"
-                            style="background: url('https://images.pexels.com/photos/1398431/pexels-photo-1398431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center/cover;">
-                            <p class="h4 title">Bank Management System</p>
-                            <a href="https://github.com/nav69eed/CPP-CODE/tree/main/bank" target="_blank"> <button
-                                    class="btn">View Project</button></a>
-                            <p>
-                                Category:- C++(OOP)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project-item ">
-                <div class="myCard">
-                    <div class="innerCard">
-                        <div class="frontSide">
-                            <img src="https://imagedelivery.net/CWKmKRBT_UKEnKE7IlUMCg/geekflare.com/2023/06/Astra-starter-template.png/w=1500,h=728"
-                                alt="Website" class="img-fluid">
-                        </div>
-                        <div class="backSide"
-                            style="background: url('https://imagedelivery.net/CWKmKRBT_UKEnKE7IlUMCg/geekflare.com/2023/06/Astra-starter-template.png/w=1500,h=728') no-repeat center center/cover;">
-                            <p class="h4 title">Portfolio (Full Stack)</p>
-                            <button class="btn">View Project</button>
-                            <p>
-                                Category :- Laravel (PHP)
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project-item ">
-                <div class="myCard">
-                    <div class="innerCard">
-                        <div class="frontSide">
-                            <img src="https://images.pexels.com/photos/1089306/pexels-photo-1089306.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                alt="Website" class="img-fluid">
-                        </div>
-                        <div class="backSide"
-                            style="background: url('https://images.pexels.com/photos/1089306/pexels-photo-1089306.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center/cover;">
-                            <p class="h4 title">Flight Reservation System</p>
-                            <button class="btn">View Project</button>
-                            <p>
-                                Category :- C Language
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="project-item">
+          <div class="myCard">
+            <div class="innerCard">
+              <div class="frontSide">
+                <img
+                  src="https://images.pexels.com/photos/5940841/pexels-photo-5940841.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt="Website"
+                  class="img-fluid"
+                />
+              </div>
+              <div
+                class="backSide"
+                style="
+                  background: url('https://images.pexels.com/photos/5940841/pexels-photo-5940841.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')
+                    no-repeat center center/cover;
+                "
+              >
+                <p class="h4 title">Student Management System</p>
+                <a
+                  href="https://github.com/nav69eed/CPP-CODE/tree/main/CPP%20PROGRAMMING"
+                  target="_blank"
+                >
+                  <button class="btn">View Project</button>
+                </a>
+                <p>Category:- C++ (OOP)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="myCard">
+            <div class="innerCard">
+              <div class="frontSide">
+                <img
+                  src="https://images.pexels.com/photos/6550162/pexels-photo-6550162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt="Website"
+                  class="img-fluid"
+                />
+              </div>
+              <div
+                class="backSide"
+                style="
+                  background: url('https://images.pexels.com/photos/6550162/pexels-photo-6550162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')
+                    no-repeat center center/cover;
+                "
+              >
+                <p class="h4 title">Library Management System</p>
+                <button class="btn">View Project</button>
+                <p>Category: - C++ (OOP)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="myCard">
+            <div class="innerCard">
+              <div class="frontSide">
+                <img
+                  src="https://images.pexels.com/photos/1398431/pexels-photo-1398431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt="Website"
+                  class="img-fluid"
+                />
+              </div>
+              <div
+                class="backSide"
+                style="
+                  background: url('https://images.pexels.com/photos/1398431/pexels-photo-1398431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')
+                    no-repeat center center/cover;
+                "
+              >
+                <p class="h4 title">Bank Management System</p>
+                <a
+                  href="https://github.com/nav69eed/CPP-CODE/tree/main/bank"
+                  target="_blank"
+                >
+                  <button class="btn">View Project</button></a
+                >
+                <p>Category:- C++(OOP)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="myCard">
+            <div class="innerCard">
+              <div class="frontSide">
+                <img
+                  src="https://imagedelivery.net/CWKmKRBT_UKEnKE7IlUMCg/geekflare.com/2023/06/Astra-starter-template.png/w=1500,h=728"
+                  alt="Website"
+                  class="img-fluid"
+                />
+              </div>
+              <div
+                class="backSide"
+                style="
+                  background: url('https://imagedelivery.net/CWKmKRBT_UKEnKE7IlUMCg/geekflare.com/2023/06/Astra-starter-template.png/w=1500,h=728')
+                    no-repeat center center/cover;
+                "
+              >
+                <p class="h4 title">Portfolio (Full Stack)</p>
+                <button class="btn">View Project</button>
+                <p>Category :- Laravel (PHP)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="myCard">
+            <div class="innerCard">
+              <div class="frontSide">
+                <img
+                  src="https://images.pexels.com/photos/1089306/pexels-photo-1089306.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt="Website"
+                  class="img-fluid"
+                />
+              </div>
+              <div
+                class="backSide"
+                style="
+                  background: url('https://images.pexels.com/photos/1089306/pexels-photo-1089306.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')
+                    no-repeat center center/cover;
+                "
+              >
+                <p class="h4 title">Flight Reservation System</p>
+                <button class="btn">View Project</button>
+                <p>Category :- C Language</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
 
-
-<iframe src='https://embedstreams.me/cricket-world-cup/pakistan-vs-netherlands-stream-1' width='100%' height='100%' scrolling='no' frameborder='0' allowfullscreen allowtransparency referrerpolicy='unsafe-url'>
-
     
-
     <script>
-        var typed = new Typed('#skills', {
-            strings: ['Web Developer', 'Wordpress Developer', 'C++ Programmer', 'C Programmer', 'Laravel Programmer'],
-            typeSpeed: 50,
-            smartBackspace: true,
-            loop: true,
-            loopCount: Infinity,
-        });
-
-
-
-
-
+      var typed = new Typed("#skills", {
+        strings: [
+          "Web Developer",
+          "Wordpress Developer",
+          "C++ Programmer",
+          "C Programmer",
+          "Laravel Programmer",
+        ],
+        typeSpeed: 50,
+        smartBackspace: true,
+        loop: true,
+        loopCount: Infinity,
+      });
     </script>
-
-
-</body>
-
+  </body>
 </html>
