@@ -480,11 +480,7 @@ EDUCATION
   top: 21px;
   left: 0;
 }
-.timeline-item h4 {
-
-}
 .timeline-item {
-  /* padding-left: 20px; */
   display: flex;
   align-items: baseline;
 }
@@ -495,6 +491,5 @@ EDUCATION
   border: 1.5px solid var(--secondary);
   width: 40px;
   display: inline-block;
-  /* margin-left: -32px; */
   vertical-align: middle;
 }
